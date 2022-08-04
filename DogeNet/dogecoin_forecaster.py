@@ -27,7 +27,7 @@ train_size = int(len(close) * percent_train)
 close_train = close[:train_size]
 close_test = close[train_size:]
 
-# Get total number of numbers within each dataset
+# Get total number of closing prices within each dataset
 total_prices_train = len(close_train)
 total_prices_test = len(close_test)
 
