@@ -36,4 +36,3 @@ This neural network was created with the help of the Tensorflow library.
 
 ## Disclaimer
 Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way. 
-
