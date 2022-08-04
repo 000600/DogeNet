@@ -3,14 +3,14 @@
 ## The Neural Networks
 These recurrent neural networks predict the closing price of Dogecoin based on the five most recent previous closing prices; the models take an input consist of a numpy array with the structure [[*closing price five days ago*, *closing price four days ago*, *closing price three days ago*, *closing price two days ago*, *closing price one day ago*]] and output a predicted closing price based on that input. Since both models try to predict closing price values close to actual values, they each use a mean squared error loss function and have 1 output neuron (since they are only predicting one output value — the closing price). They use a standard Adam optimizer with a learning rate of 0.001.
 
-1. The first model, found in the **dogecoin_forecaster.py** file, is a RNN that uses all of the available data and can predict the closing price well up until the data finishes, after which it can only predict reasonable closing prices somewhat well. It contains an architecture consisting of:
+1. The first model, found in the **dogecoin_predictor.py** file, is a RNN that uses all of the available data and can predict the closing price well up until the data finishes, after which it can only predict reasonable closing prices somewhat well. It contains an architecture consisting of:
     - 1 Input LSTM layer (with 50 neurons, a standard tanh activation function, and an input shape of (5, 1))
     - 1 Dropout layer (with a dropout rate of 0.2)
     - 1 LSTM layer (with 50 units and a standard tanh activation function)
     - 1 Dropout layer (with a dropout rate of 0.2)
     - 1 Output layer (with 1 neuron and no activation function)
 
-2. The second model, found in the **dogecoin_predictor.py** file, is a RNN that uses some of the available data as training data and the rest as testing data. It can predict the Dogecoin closing price reasonably well with inputs within its training data, and — unlike the other model — is reasonably adept at predicting closing prices on testing data; it has reasonable test accuracy. It has an architecture of:
+2. The second model, found in the **dogecoin_forecaster.py** file, is a RNN that uses some of the available data as training data and the rest as testing data. It can predict the Dogecoin closing price reasonably well with inputs within its training data, and — unlike the other model — is reasonably adept at predicting closing prices on testing data; it has reasonable test accuracy. It has an architecture of:
     - 1 Horizontal random flip layer (for image preprocessing)
     - 1 VGG16 base model (with an input shape of (128, 128, 3))
     - 1 Flatten layer
