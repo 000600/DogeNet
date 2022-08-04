@@ -21,12 +21,15 @@ Feel free to further tune the hyperparameters or build upon either of the models
 
 ## The Dataset
 The dataset used here can be found at this link: https://www.kaggle.com/datasets/neelgajare/dogecoin-historical-price-data. Credit for the dataset collection goes to **Ruthwik333**, **Neel Gajare**, **Ifeanyi Chigbo**, and others on *Kaggle*. The dataset contains daily data on Dogecoin from November 9, 2017, to July 28, 2022. The attributes found in the data are:
+
 - Daily opening price
 - Daily closing price
 - Daily volume
 - Daily high
 - Daily low
 - Daily adjacent close
+
+Note that in the **dogecoin_forecaster.py** file the data is preprocessed with Scikit-Learn's **MinMaxScaler()**
 
 ## Libraries
 This neural network was created with the help of the Tensorflow library.
