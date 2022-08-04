@@ -1,6 +1,6 @@
 # DogeNet
 
-![Dogecoin](https://img.shields.io/badge/dogecoin-B59A30?style=for-the-badge&logo=dogecoin&logoColor=white)
+[![Dogecoin](https://img.shields.io/badge/dogecoin-B59A30?style=for-the-badge&logo=dogecoin&logoColor=white)](https://www.youtube.com/watch?v=cbI31x3FpS0)]
 
 ## The Neural Networks
 These recurrent neural networks predict the closing price of Dogecoin based on the five most recent previous closing prices; the models take an input consist of a numpy array with the structure [[*closing price five days ago*, *closing price four days ago*, *closing price three days ago*, *closing price two days ago*, *closing price one day ago*]] and output a predicted closing price based on that input. Since both models try to predict closing price values close to actual values, they each use a mean squared error loss function and have 1 output neuron (since they are only predicting one output value — the closing price). They use a standard Adam optimizer with a learning rate of 0.001.
