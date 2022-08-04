@@ -11,12 +11,11 @@ These recurrent neural networks predict the closing price of Dogecoin based on t
     - 1 Output layer (with 1 neuron and no activation function)
 
 2. The second model, found in the **dogecoin_forecaster.py** file, is a RNN that uses some of the available data as training data and the rest as testing data. It can predict the Dogecoin closing price reasonably well with inputs within its training data, and — unlike the other model — is reasonably adept at predicting closing prices on testing data; it has reasonable test accuracy. It has an architecture of:
-    - 1 Horizontal random flip layer (for image preprocessing)
-    - 1 VGG16 base model (with an input shape of (128, 128, 3))
-    - 1 Flatten layer
-    - 1 Dropout layer (with a dropout rate of 0.3)
-    - 1 Hidden layer (with 256 neurons and a ReLU activation function
-    - 1 Output layer (with 1 output neuron and a sigmoid activation function) 
+    - 1 Input LSTM layer (with 50 neurons, a standard tanh activation function, and an input shape of (5, 1))
+    - 1 Dropout layer (with a dropout rate of 0.2)
+    - 1 LSTM layer (with 50 units and a standard tanh activation function)
+    - 1 Dropout layer (with a dropout rate of 0.2)
+    - 1 Output layer (with 1 neuron and no activation function)
 
 Feel free to further tune the hyperparameters or build upon either of the models!
 
