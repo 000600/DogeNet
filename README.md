@@ -1,9 +1,7 @@
 # DogeNet
 
-[![Dogecoin](https://img.shields.io/badge/dogecoin-B59A30?style=for-the-badge&logo=dogecoin&logoColor=white)](https://www.youtube.com/watch?v=cbI31x3FpS0)]
-
 ## The Neural Networks
-These recurrent neural networks predict the closing price of Dogecoin based on the five most recent previous closing prices; the models take an input consist of a numpy array with the structure [[*closing price five days ago*, *closing price four days ago*, *closing price three days ago*, *closing price two days ago*, *closing price one day ago*]] and output a predicted closing price based on that input. Since both models try to predict closing price values close to actual values, they each use a mean squared error loss function and have 1 output neuron (since they are only predicting one output value — the closing price). They use a standard Adam optimizer with a learning rate of 0.001.
+These recurrent neural networks predict the closing price of Dogecoin ([![Dogecoin](https://img.shields.io/badge/dogecoin-B59A30?style=for-the-badge&logo=dogecoin&logoColor=white)](https://www.youtube.com/watch?v=cbI31x3FpS0)) based on the five most recent previous closing prices; the models take an input consist of a numpy array with the structure [[*closing price five days ago*, *closing price four days ago*, *closing price three days ago*, *closing price two days ago*, *closing price one day ago*]] and output a predicted closing price based on that input. Since both models try to predict closing price values close to actual values, they each use a mean squared error loss function and have 1 output neuron (since they are only predicting one output value — the closing price). They use a standard Adam optimizer with a learning rate of 0.001.
 
 1. The first model, found in the **dogecoin_predictor.py** file, is a RNN that uses all of the available data and can predict the closing price well up until the data finishes, after which it can only predict reasonable closing prices somewhat well. It contains an architecture consisting of:
     - 1 Input LSTM layer (with 50 neurons, a standard tanh activation function, and an input shape of (5, 1))
@@ -41,4 +39,4 @@ This neural network was created with the help of the Tensorflow and Scikit-Learn
 - Scikit-Learn's Installation Instructions: https://scikit-learn.org/stable/install.html
 
 ## Disclaimer
-Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way. 
+Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way.
