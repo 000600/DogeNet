@@ -14,7 +14,7 @@ df = pd.read_csv('DOGE-USD.csv')
 df = df[df['Close'].notna()]
 close = np.array(df[['Close']])
 
-# Get total number of prices
+# Get total number of prices in the data
 total_prices = len(close)
 
 # Create dataset
