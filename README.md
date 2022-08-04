@@ -29,7 +29,7 @@ The dataset used here can be found at this link: https://www.kaggle.com/datasets
 - Daily low
 - Daily adjacent close
 
-Note that in the **dogecoin_forecaster.py** file the data is preprocessed with Scikit-Learn's **MinMaxScaler()**
+Note that in the **dogecoin_forecaster.py** file the data is preprocessed with Scikit-Learn's **MinMaxScaler()**.
 
 ## Libraries
 This neural network was created with the help of the Tensorflow and Scikit-Learn libraries.
