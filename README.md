@@ -32,9 +32,11 @@ The dataset used here can be found at this link: https://www.kaggle.com/datasets
 Note that in the **dogecoin_forecaster.py** file the data is preprocessed with Scikit-Learn's **MinMaxScaler()**
 
 ## Libraries
-This neural network was created with the help of the Tensorflow library.
+This neural network was created with the help of the Tensorflow and Scikit-Learn libraries.
 - Tensorflow's Website: https://www.tensorflow.org/
 - Tensorflow Installation Instructions: https://www.tensorflow.org/install
+- Scikit-Learn's Website: https://scikit-learn.org/stable/
+- Scikit-Learn's Installation Instructions: https://scikit-learn.org/stable/install.html
 
 ## Disclaimer
 Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way. 
