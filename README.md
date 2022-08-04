@@ -10,7 +10,7 @@ These recurrent neural networks predict the closing price of Dogecoin based on t
     - 1 Dropout layer (with a dropout rate of 0.2)
     - 1 Output layer (with 1 neuron and no activation function)
 
-2. The second model, found in the **dogecoin_predictor.py** file, is a RNN that uses some of the available data as training data and the rest as testing data. It can predict the dogecoin closing price reasonably well with inputs within its training data, but — like the other model — can only predict closing prices based on test data somewhat well. It has an architecture of:
+2. The second model, found in the **dogecoin_predictor.py** file, is a RNN that uses some of the available data as training data and the rest as testing data. It can predict the Dogecoin closing price reasonably well with inputs within its training data, and — unlike the other model — is reasonably adept at predicting closing prices on testing data; it has reasonable test accuracy. It has an architecture of:
     - 1 Horizontal random flip layer (for image preprocessing)
     - 1 VGG16 base model (with an input shape of (128, 128, 3))
     - 1 Flatten layer
@@ -35,5 +35,5 @@ This neural network was created with the help of the Tensorflow library.
 - Tensorflow Installation Instructions: https://www.tensorflow.org/install
 
 ## Disclaimer
-Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual medical use or application in any way. 
+Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way. 
 
