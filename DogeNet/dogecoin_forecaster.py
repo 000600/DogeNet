@@ -100,7 +100,7 @@ batch_size = 64
 model.compile(optimizer = opt, loss = 'mse')
 history = model.fit(x_train, y_train, epochs = epochs, batch_size = batch_size, validation_data = (x_test, y_test)) # To add early stopping, add 'callbacks = [early_stopping]'
 
-# Visualize  loss and validation loss
+# Visualize loss and validation loss
 history_dict = history.history
 loss = history_dict['loss']
 val_loss = history_dict['val_loss']
