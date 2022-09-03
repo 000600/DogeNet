@@ -39,4 +39,4 @@ These neural networks were created with the help of the Tensorflow and Scikit-Le
 - Scikit-Learn's Installation Instructions: https://scikit-learn.org/stable/install.html
 
 ## Disclaimer
-Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way.
+Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual financial use or application in any way. Nothing here is meant to advise or guide financial decisions.
