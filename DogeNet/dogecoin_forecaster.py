@@ -131,7 +131,7 @@ plt.title("Model's Predicted Closing Price Compared to Actual Closing Price of D
 plt.legend()
 plt.show()
 
-# View prediction sequences
+# View prediction sequences on a random input
 
 # Generate random index
 index = np.random.randint(0, len(x_raw_test) - 1)
