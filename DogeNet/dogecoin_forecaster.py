@@ -125,7 +125,7 @@ pred_test_filled = np.append(filler, pred_test)
 plt.plot(close, label = 'Actual Closing Price') # Plot actual values
 plt.plot(pred_train, label = 'Predicted Closing Price (Train Data)') # Plot predictions on training data
 plt.plot(pred_test_filled, label = 'Predicted Closing Price (Test Data)') # Plot predictions on testing data
-plt.xlabel('Time (Index)')
+plt.xlabel('Time')
 plt.ylabel('Dogecoin Closing Price')
 plt.title("Model's Predicted Closing Price Compared to Actual Closing Price of Dogecoin")
 plt.legend()
@@ -153,9 +153,9 @@ for iter in range(num_iterations):
 
 # Visualize model's predictions
 plt.plot(predictions)
-plt.xlabel('Time (Index)')
+plt.xlabel('Time')
 plt.ylabel('Projected Price')
-plt.title("Model's Projected Closing Price of Dogecoin Over Time")
+plt.title("Model's Projected Closing Price of Dogecoin From a Random Seed")
 plt.show()
 
 # View model's predicted outlook on Dogecoin after the dataset
@@ -184,7 +184,7 @@ projected = np.append(filler, proj_predictions)
 plt.plot(close, label = 'Actual Closing Price') # Plot actual values
 plt.plot(pred_total, label = 'Predicted Closing Price') # Plot predictions
 plt.plot(projected, label = 'Projected Closing Price') # Plot projections
-plt.xlabel('Time (Index)')
+plt.xlabel('Time')
 plt.ylabel('Dogecoin Closing Price')
 plt.title("Model's Projected Closing Price of Dogecoin")
 plt.legend()
